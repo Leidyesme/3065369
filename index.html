@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <section>
+      <form action="index.html" method="get">
+        <ul>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              placeholder="A-Za-z"
+              id="nombre"
+              name="nombre"
+              pattern="[A-Za-z]+"
+              required
+            />
+          </div>
+          <div>
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              placeholder="a-z"
+              id="Apellido"
+              name="Apellido"
+              pattern="[a-z]+"
+              required
+            />
+          </div>
+          <div>
+            <label for="Color">Color Favotiro</label>
+            <input type="color" required />
+          </div>
+          <div>
+            <label for="edad">Edad</label>
+            <input type="number" id="Edad" min="0" max="100" required />
+          </div>
+          <div>
+            <label for="numeros">Numeros</label>
+            <input type="number" name="numeros" pattern="number" required />
+          </div>
+          <div>
+            <label for="numeros positivos">Numeros Positivos</label>
+            <input type="number" name="numeros positivos" min="0" required />
+          </div>
+          <div>
+            <label for="minimo y maximo">Minimo y Maximo</label>
+            <input
+              type="number"
+              name="minimo y maximo"
+              min="10"
+              max="20"
+              step="0.5"
+              required
+            />
+          </div>
+          <div>
+            <label for="fecha de nacimiento">Fecha de Nacimiento</label>
+            <input type="date" required />
+          </div>
+          <div>
+            <label for="hora">Hora</label>
+            <input type="time" required />
+          </div>
+          <div>
+            <label for="ciudad">ciudad</label>
+            <select name="ciudad" id="ciudad">
+              <option value="">Seleccione</option>
+              <option value="1">Girón</option>
+              <option value="2">Bucaramanga</option>
+              <option value="3">floridablanca</option>
+              <option value="4">Piedecuesta</option>
+            </select>
+          </div>
+          <div>
+            <label for="genero">Genero</label>
+            <select name="genero" id="genero">
+              <option value="">Seleccione</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+              <option value="3">Otro</option>
+            </select>
+          </div>
+          <div>
+            <label for="materias">Materias</label>
+            <select name="materias" id="materias">
+              <option value="">Seleccione</option>
+              <option value="1">HTML</option>
+              <option value="2">CSS</option>
+              <option value="3">JS</option>
+              <option value="4">JAVA</option>
+              <option value="5">PYTHON</option>
+              <option value="6">PHP</option>
+            </select>
+          </div>
+          <div>
+            <label for="archivos">Archivos</label>
+            <input
+              type="file"
+              name="archivos"
+              accept="jpg, .png"
+              multiplique
+              required
+            />
+          </div>
+          <div>
+            <label for="contraseña">Contraseña</label>
+            <input
+              type="password"
+              name="Contraseña"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+          <div>
+            <label for="nombre">Nombre del aprendiz</label>
+            <input type="text" value="Leidy Esmeralda Duarte Prada" disabled />
+          </div>
+          <button type="submit">Enviar</button>
+        </ul>
+      </form>
+    </section>
+  </body>
+</html>
